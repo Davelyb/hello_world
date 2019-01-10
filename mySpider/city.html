@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+ <title>北京延庆县PM2.5实时查询和北京延庆县空气质量指数(AQI)--PM2.5查询</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="北京延庆县PM2.5实时数据查询及北京延庆县空气质量污染指数(AQI)查询" />
+<meta name="keywords" content="北京延庆县PM2.5,北京延庆县空气质量指数(AQI),北京延庆县空气污染指数" />
+<link href="../css/main.css" type="text/css" rel="stylesheet" />
+<link href="../css/mainaqi.css" type="text/css" rel="stylesheet" />
+	
+<script src="http://pagead2.googlesyndication.com/pagead/js/r20190102/r20100101/osd.js"></script><script src="http://pagead2.googlesyndication.com/pub-config/r20160913/ca-pub-9207724479052697.js"></script><script language="JavaScript" src="../js/jquery.min.js" type="text/javascript"></script> 
+<script language="JavaScript" src="../js/highcharts.js" type="text/javascript"></script> 
+<script type="text/javascript">    (function() {
+        var url = location.href;
+
+        if ((url.indexOf('www.86pm25.com') != -1) &amp;&amp; navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)) {
+            var url = location.href;
+            url = url.replace("www.", "m.");
+            location.href = url;
+        }
+    })();</script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.86pm25.com" as="script" /><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.86pm25.com"></script><link rel="preload" href="http://pagead2.googlesyndication.com/pagead/js/r20190102/r20180604/show_ads_impl.js" as="script" /></head>
+
+<body>
+	<div class="wrap">
+		
+		<div class="layout">
+			
+			<div class="content">
+			<div class="aqi-site" style="height:100px; border:0; padding-top:10px;">
+			<div style=" float:left;"><a href="/"><img src="../images/logo.jpg" border="0" /></a></div>
+			<div style=" float:right;"><a href="/"><img src="../images/dingbu.jpg" border="0" /></a></div>
+	</div>
+			
+	<div id="tqNav">
+		<ul>
+			<li><a href="/">首页</a></li>
+			<li><a href="/paiming.htm">实时排名</a></li>
+		</ul>
+	
+	</div>
+			
+			<div class="aqi-site" style="height:25px; border:0;">
+			<div style=" float:left; ">
+		您的位置: <a href="/" title="首页">首页</a> &gt; 北京延庆县PM2.5及北京延庆县空气质量指数(AQI)
+		</div>
+		 <div style=" float:right;">空气质量预报：明天 <font style="background-color:#FFFF00; text-align:center;padding:1px;color:Black;">良</font> | 后天 <font style="background-color:#FFFF00; text-align:center;padding:1px;color:Black;">良</font></div>
+		
+			
+			
+			</div> 
+			
+				<div class="aqi-site" style="height:200px;">
+				
+
+<div class="today-quality" style="float:left; margin-top:30px; margin-left:50px;"><div class="fleft">
+
+
+<script type="text/javascript">
+    if (typeof (weatherinfovar) != "undefined" &amp;&amp; typeof (weatherinfovar.weatherinfo.idx) != "undefined" &amp;&amp; weatherinfovar.weatherinfo.idx != null &amp;&amp; weatherinfovar.weatherinfo.idx != "") {
+        var qualityStr = weatherinfovar.weatherinfo.lv_hint; var aqiPercent = aqiPercent(weatherinfovar.weatherinfo.idx);
+        var idx = weatherinfovar.weatherinfo.idx; var aqiLevel = weatherinfovar.weatherinfo.aqiLevel;
+    }
+    else { var qualityStr = "良"; var aqiPercent = "18"; var idx = "72"; var aqiLevel = "2"; }
+ </script>
+<script type="text/javascript">    document.write("&lt;div class='aqi aqi-lv" + aqiLevel + "'&gt;");</script><div class="aqi aqi-lv2">
+<div style="text-align:center">
+<h3 style="font-size:14px; font-weight:bold">北京延庆县实时空气质量指数</h3></div>
+<div class="remark">更新：2019年01月08日 09时</div>
+<div style="background:url(http://pmwww.win10world.com/images/aqi-ruler-140616.png) no-repeat;margin:0 auto 8px;width:330px;height:33px;background-position:-1px 0">
+<div class="panel"><script type="text/javascript">                       document.write("&lt;b class='cur' style='left:" + aqiPercent + "%;'&gt;" + idx + "&lt;/b&gt;");</script><b class="cur" style="left:18%;">72</b></div>
+
+</div>
+<script type="text/javascript">    document.write("&lt;/div&gt;");</script></div>
+</div>
+</div>
+				<div style=" float:right; width:450px; padding-top:20px;">
+						<img src="http://pmwww.win10world.com/images/jiankangzhiyin/jiankang_liang.png" />
+					</div>
+				</div>
+				
+				
+
+ <div class="weilai" style=" margin:auto; width:960px;">
+ 	<!--站点实时值开始-->
+
+<div style=" margin:auto; width:960px; text-align:center;font-size:14px; font-weight:bold; margin:10px;">各监测站点实时数据</div>
+<table>	 <thead onclick="sortColumn(event)"><tr style=" background-color:#EBEFF7"><th width="15%">监测站点</th><th width="10%">AQI</th><th width="20%">   污染等级</th><th width="20%">PM2.5浓度</th> <th width="20%">PM10浓度</th> </tr></thead>
+<tbody><tr><td>延庆</td><td>72</td><td><img src="../images/wurandengji/liang.gif" /> </td><td>46μg/m³</td><td>93μg/m³</td></tr></tbody></table>
+	<!--站点实时值结束-->
+	<!--站点实时值结束-->
+	
+	<!--广告开始-->
+	<div style=" margin:auto; width:960px; margin-top:10px; border:1px solid #dadada; height:100px;">
+	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 20171026_86pm25 -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-9207724479052697" data-ad-slot="6028964453" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:960px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:960px;background-color:transparent;"><iframe width="960" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:960px;height:90px;"></iframe></ins></ins></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+	</div>
+	<!--广告结束-->
+	
+				
+
+     <script type="text/javascript">
+
+
+         Highcharts.visualize = function (table, options) {
+             // the categories
+             options.xAxis.categories = [];
+             $('tbody th', table).each(function (i) {
+                 options.xAxis.categories.push(this.innerHTML);
+             });
+
+             // the data series
+             options.series = [];
+             $('tr', table).each(function (i) {
+                 var tr = this;
+                 $('th, td', tr).each(function (j) {
+                     if (j &gt; 0) { // skip first column
+                         //var labelvalue=this.innerHTML;
+                         //alert(labelvalue);
+                         if (i == 0) { // get the name and init the series
+                             options.series[j - 1] = {
+                                 name: this.innerHTML,
+                                 data: [],
+                                 dataLabels: {
+                                     enabled: true,
+                                     rotation: 0,
+                                     color: '#000000',
+                                     align: 'center',
+                                     x: -1,
+                                     y: -6,
+                                     formatter: function () {
+                                         return this.innerHTML;
+                                     }
+                                 }
+                             };
+                         } else {
+                             if ((j - 1) == 1) { options.series[j - 1].data.push({ "color": "#4572a7", "y": parseFloat(this.innerHTML) }); }
+                             if ((j - 1) == 0) {
+                                 if (isNaN(parseFloat(this.innerHTML))) { options.series[j - 1].data.push({ "color": "#00E400", "y": "" }); }
+                                 if (parseFloat(this.innerHTML) &gt;= 0 &amp;&amp; parseFloat(this.innerHTML) &lt;= 50) {
+                                     options.series[j - 1].data.push({ "color": "#00E400", "y": parseFloat(this.innerHTML) });
+                                     options.series[j - 1].dataLabels.enabled = "true";
+                                     options.series[j - 1].dataLabels.formatter = function () {
+                                         if (this.y == 0 || this.innerHTML == "NA") {
+                                             return "NA";
+                                         } else {
+                                             return this.y;
+                                         }
+                                     };
+                                 }
+                                 if (parseFloat(this.innerHTML) &gt;= 51 &amp;&amp; parseFloat(this.innerHTML) &lt;= 100) {
+                                     options.series[j - 1].data.push({ "color": "#FFFF00", "y": parseFloat(this.innerHTML) });
+                                     options.series[j - 1].dataLabels.enabled = "true";
+                                     options.series[j - 1].dataLabels.formatter = function () {
+                                         if (this.y == 0) {
+                                             return "NA";
+                                         } else {
+                                             return this.y;
+                                         }
+                                     };
+
+                                 }
+                                 if (parseFloat(this.innerHTML) &gt;= 101 &amp;&amp; parseFloat(this.innerHTML) &lt;= 150) {
+                                     options.series[j - 1].data.push({ "color": "#FF7E00", "y": parseFloat(this.innerHTML) });
+                                     options.series[j - 1].dataLabels.enabled = "true";
+                                     options.series[j - 1].dataLabels.formatter = function () {
+                                         if (this.y == 0) {
+                                             return "NA";
+                                         } else {
+                                             return this.y;
+                                         }
+                                     };
+
+                                 }
+                                 if (parseFloat(this.innerHTML) &gt;= 151 &amp;&amp; parseFloat(this.innerHTML) &lt;= 200) {
+                                     options.series[j - 1].data.push({ "color": "#FF0000", "y": parseFloat(this.innerHTML) });
+                                     options.series[j - 1].dataLabels.enabled = "true";
+                                     options.series[j - 1].dataLabels.formatter = function () {
+                                         if (this.y == 0) {
+                                             return "NA";
+                                         } else {
+                                             return this.y;
+                                         }
+                                     };
+                                 }
+                                 if (parseFloat(this.innerHTML) &gt;= 201 &amp;&amp; parseFloat(this.innerHTML) &lt;= 300) {
+                                     options.series[j - 1].data.push({ "color": "#99004C", "y": parseFloat(this.innerHTML) });
+                                     options.series[j - 1].dataLabels.enabled = "true";
+                                     options.series[j - 1].dataLabels.formatter = function () {
+                                         if (this.y == 0) {
+                                             return "NA";
+                                         } else {
+                                             return this.y;
+                                         }
+                                     };
+                                 }
+                                 if (parseFloat(this.innerHTML) &gt; 300) {
+                                     options.series[j - 1].data.push({ "color": "#7E0023", "y": parseFloat(this.innerHTML) });
+                                     options.series[j - 1].dataLabels.enabled = "true";
+                                     options.series[j - 1].dataLabels.formatter = function () {
+                                         if (this.y == 0) {
+                                             return "NA";
+                                         } else {
+                                             return this.y;
+                                         }
+                                     };
+                                 }
+                             }
+                         }
+                     }
+                 });
+             });
+
+             var chart = new Highcharts.Chart(options);
+             Highcharts.setOptions({ colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'] });
+         }
+
+         // On document ready, call visualize on the datatable.
+         $(document).ready(function () {
+             var table = document.getElementById('datatable'),
+             options = {
+                 plotOptions: {
+                     column: {
+                         pointWidth: 20  ////设置柱子宽度
+                     }
+                 },
+                 chart: {
+                     renderTo: 'container',
+                     defaultSeriesType: 'column'
+                 },
+                 exporting: {
+                     enabled: false //用来设置是否显示'打印','导出'等功能按钮，不设置时默认为显示 
+                 },
+                 title: {
+                     text: '北京延庆县过去24小时空气质量指数趋势',
+                     style: { fontSize: '19px' }, align: "center"
+
+                 },
+                 colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'],
+                 xAxis: {
+                     labels: {
+                         y: 20
+                     }
+                 },
+                 yAxis: {
+                     align: 'right',
+                     title: {
+                         text: ''
+                     }
+                 },
+                 legend: {
+                     enabled: false
+                 }
+             };
+
+
+             Highcharts.visualize(table, options);
+         });
+
+
+         //----------------------------------------------
+         $(document).ready(function () {
+             var table = document.getElementById('datatable1'),
+             options = {
+                 plotOptions: {
+                     column: {
+                         pointWidth: 20  ////设置柱子宽度
+                     }
+                 },
+                 chart: {
+                     renderTo: 'container1',
+                     defaultSeriesType: 'column'
+                 },
+                 exporting: {
+                     enabled: false //用来设置是否显示'打印','导出'等功能按钮，不设置时默认为显示 
+                 },
+                 title: {
+                     text: '北京延庆县过去21天空气质量指数趋势',
+                     style: { fontSize: '19px' }, align: "center"
+
+                 },
+                 colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'],
+                 xAxis: {
+                     labels: {
+                         y: 20
+                     }
+                 },
+                 yAxis: {
+                     align: 'right',
+                     title: {
+                         text: ''
+                     }
+                 },
+                 legend: {
+                     enabled: false
+                 }
+             };
+
+
+             Highcharts.visualize(table, options);
+         });
+
+		</script>
+
+     <div id="container" style="margin:auto; margin-top:10px;width:960px; height: 250px;"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 960px; height: 250px; text-align: left; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="250"><defs><clipPath id="highcharts-1"><rect rx="0" ry="0" fill="none" x="0" y="0" width="940" height="195" stroke-width="0.000001"/></clipPath></defs><rect rx="5" ry="5" fill="#FFFFFF" x="0" y="0" width="960" height="250" stroke-width="0.000001" stroke="#4572A7"/><text x="480" y="25" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#3E576F;font-size:19px;fill:#3E576F;" text-anchor="middle" class="highcharts-title" zIndex="1"><tspan x="480">北京延庆县过去24小时空气质量指数趋势</tspan></text><g class="highcharts-grid" zIndex="1"/><g class="highcharts-grid" zIndex="1"/><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" clip-path="url(http://www.86pm25.com/city/97.html#highcharts-1)" visibility="visible" transform="translate(10,40)"/></g><g class="highcharts-highcharts-data-labels" visibility="visible" zIndex="5" transform="translate(10,40)"/><g class="highcharts-axis" zIndex="7"/><g class="highcharts-axis" zIndex="7"/><path d="M 10 235.5 L 950 235.5" fill="none" stroke="#C0D0E0" stroke-width="1" zIndex="7"/><g class="highcharts-tooltip" zIndex="8" visibility="hidden"><rect rx="5" ry="5" fill="none" x="7" y="7" width="0" height="0" stroke-width="5" fill-opacity="0.85" isShadow="true" stroke="rgb(0, 0, 0)" stroke-opacity="0.05" transform="translate(1,1)"/><rect rx="5" ry="5" fill="none" x="7" y="7" width="0" height="0" stroke-width="3" fill-opacity="0.85" isShadow="true" stroke="rgb(0, 0, 0)" stroke-opacity="0.1" transform="translate(1,1)"/><rect rx="5" ry="5" fill="none" x="7" y="7" width="0" height="0" stroke-width="1" fill-opacity="0.85" isShadow="true" stroke="rgb(0, 0, 0)" stroke-opacity="0.15000000000000002" transform="translate(1,1)"/><rect rx="5" ry="5" fill="rgb(255,255,255)" x="7" y="7" width="0" height="0" stroke-width="2" fill-opacity="0.85"/><text x="12" y="24" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#333333;font-size:12px;padding:0;white-space:nowrap;fill:#333333;" zIndex="1"><tspan x="12"> </tspan></text></g><text x="950" y="245" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;cursor:pointer;color:#909090;font-size:10px;fill:#909090;" text-anchor="end" zIndex="8"><tspan x="950"> </tspan></text><g class="highcharts-tracker" zIndex="9" transform="translate(10,40)"/></svg></div></div>
+				
+		
+			
+ 
+flashvalue += "<set name="01-07 07:00" value="141" color="FF7805">";
+flashvalue += "<set name="01-07 08:00" value="176" color="FA0100">";
+flashvalue += "<set name="01-07 09:00" value="183" color="FA0100">";
+flashvalue += "<set name="01-07 10:00" value="183" color="FA0100">";
+flashvalue += "<set name="01-07 13:00" value="75" color="FFFF00">";
+flashvalue += "<set name="01-07 15:00" value="52" color="FFFF00">";
+flashvalue += "<set name="01-07 16:00" value="55" color="FFFF00">";
+flashvalue += "<set name="01-07 17:00" value="51" color="FFFF00">";
+flashvalue += "<set name="01-07 18:00" value="33" color="07FD04">";
+flashvalue += "<set name="01-07 19:00" value="30" color="07FD04">";
+flashvalue += "<set name="01-07 20:00" value="22" color="07FD04">";
+flashvalue += "<set name="01-07 21:00" value="36" color="07FD04">";
+flashvalue += "<set name="01-07 22:00" value="46" color="07FD04">";
+flashvalue += "<set name="01-07 23:00" value="63" color="FFFF00">";
+flashvalue += "<set name="01-08 00:00" value="75" color="FFFF00">";
+flashvalue += "<set name="01-08 01:00" value="61" color="FFFF00">";
+flashvalue += "<set name="01-08 02:00" value="51" color="FFFF00">";
+flashvalue += "<set name="01-08 03:00" value="47" color="07FD04">";
+flashvalue += "<set name="01-08 04:00" value="39" color="07FD04">";
+flashvalue += "<set name="01-08 05:00" value="37" color="07FD04">";
+flashvalue += "<set name="01-08 06:00" value="31" color="07FD04">";
+flashvalue += "<set name="01-08 07:00" value="35" color="07FD04">";
+flashvalue += "<set name="01-08 08:00" value="69" color="FFFF00">";															
+			</set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set></set><table id="datatable" style="display:none">
+			<thead>
+				<tr>
+					<th>AQI指数：</th>
+					<th>空气质量指数（AQI）</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+				
+				<div style=" margin:auto; width:960px; margin-top:10px; text-align:center;"><img src="http://pmwww.win10world.com/images/flashimg/flashshuoming.png" /></div>				
+				
+				
+      <div id="container1" style="margin:auto; margin-top:10px;width:960px; height: 250px;"><div class="highcharts-container" id="highcharts-2" style="position: relative; overflow: hidden; width: 960px; height: 250px; text-align: left; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="250"><defs><clipPath id="highcharts-3"><rect rx="0" ry="0" fill="none" x="0" y="0" width="940" height="195" stroke-width="0.000001"/></clipPath></defs><rect rx="5" ry="5" fill="#FFFFFF" x="0" y="0" width="960" height="250" stroke-width="0.000001" stroke="#4572A7"/><text x="480" y="25" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#3E576F;font-size:19px;fill:#3E576F;" text-anchor="middle" class="highcharts-title" zIndex="1"><tspan x="480">北京延庆县过去21天空气质量指数趋势</tspan></text><g class="highcharts-grid" zIndex="1"/><g class="highcharts-grid" zIndex="1"/><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" clip-path="url(http://www.86pm25.com/city/97.html#highcharts-3)" visibility="visible" transform="translate(10,40)"/></g><g class="highcharts-highcharts-data-labels" visibility="visible" zIndex="5" transform="translate(10,40)"/><g class="highcharts-axis" zIndex="7"/><g class="highcharts-axis" zIndex="7"/><path d="M 10 235.5 L 950 235.5" fill="none" stroke="#C0D0E0" stroke-width="1" zIndex="7"/><g class="highcharts-tooltip" zIndex="8" visibility="hidden"><rect rx="5" ry="5" fill="none" x="7" y="7" width="0" height="0" stroke-width="5" fill-opacity="0.85" isShadow="true" stroke="rgb(0, 0, 0)" stroke-opacity="0.05" transform="translate(1,1)"/><rect rx="5" ry="5" fill="none" x="7" y="7" width="0" height="0" stroke-width="3" fill-opacity="0.85" isShadow="true" stroke="rgb(0, 0, 0)" stroke-opacity="0.1" transform="translate(1,1)"/><rect rx="5" ry="5" fill="none" x="7" y="7" width="0" height="0" stroke-width="1" fill-opacity="0.85" isShadow="true" stroke="rgb(0, 0, 0)" stroke-opacity="0.15000000000000002" transform="translate(1,1)"/><rect rx="5" ry="5" fill="rgb(255,255,255)" x="7" y="7" width="0" height="0" stroke-width="2" fill-opacity="0.85"/><text x="12" y="24" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#333333;font-size:12px;padding:0;white-space:nowrap;fill:#333333;" zIndex="1"><tspan x="12"> </tspan></text></g><text x="950" y="245" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;cursor:pointer;color:#909090;font-size:10px;fill:#909090;" text-anchor="end" zIndex="8"><tspan x="950"> </tspan></text><g class="highcharts-tracker" zIndex="9" transform="translate(10,40)"/></svg></div></div>
+				
+		
+			
+				 document.getElementById("chartdiv_yue").style.display = "none";											
+			<table id="datatable1" style="display:none">
+			<thead>
+				<tr>
+					<th>AQI指数：</th>
+					<th>空气质量指数（AQI）</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+
+
+				
+				<!--<div class="aqi-site" style="height:auto;margin-top:10px;padding:10px 0 10px 0; text-align:center;">
+					
+
+				</div>-->
+				
+				<div class="aqi-site" style="height:150px; margin-top:10px">
+					<div class="zstitle" style=" font-size:14px; text-align:center;">相关地区</div>
+					   <dl id="clist" style="padding-top:10px;">
+					<dd>
+					<a href="1.html" target="_blank">海淀区</a>   <a href="86.html" target="_blank">东城区</a>   <a href="83.html" target="_blank">昌平区</a>   <a href="88.html" target="_blank">丰台区</a>   <a href="94.html" target="_blank">顺义区</a>   <a href="87.html" target="_blank">房山区</a>   <a href="90.html" target="_blank">门头沟区</a>   <a href="92.html" target="_blank">平谷区</a>   <a href="91.html" target="_blank">密云县</a>   <a href="85.html" target="_blank">大兴区</a>   <a href="84.html" target="_blank">朝阳区</a>   <a href="93.html" target="_blank">石景山区</a>   <a href="89.html" target="_blank">怀柔区</a>   <a href="95.html" target="_blank">通州区</a>   <a href="96.html" target="_blank">西城区</a>   <a href="/" target="_blank">更多城市</a>
+           
+			   </dd>
+			   </dl>
+				</div>
+			</div>
+			<!--content结束-->
+		</div>
+		<!--layout结束-->
+	</div>
+</div>
+	
+	<div class="copyRight">	
+	
+	<a href="http://www.shu-ju.net" target="_blank">空气质量数据和接口</a>
+	<br /><br />
+	联系我们：pm2586<script>	               document.write("@")</script>@<script>	                   	                                               document.write("126")</script>126.com
+	<br /><br />
+	<br /><br />
+
+
+<div style="display:none;">
+<script src="https://s11.cnzz.com/z_stat.php?id=1260901755&amp;web_id=1260901755" language="JavaScript"></script><script src="https://c.cnzz.com/core.php?web_id=1260901755&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="https://www.cnzz.com/stat/website.php?web_id=1260901755" target="_blank" title="站长统计">站长统计</a>
+</div>
+	</div>
+
+
+
+<iframe id="google_osd_static_frame_8292555283036" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_shimpl" style="display: none;"></iframe><iframe id="google_esf" name="google_esf" src="http://googleads.g.doubleclick.net/pagead/html/r20190102/r20180604/zrt_lookup.html#" data-ad-client="ca-pub-9207724479052697" style="display: none;"></iframe></html>
