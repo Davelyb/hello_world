@@ -11,13 +11,11 @@ class MySpider(Spider):
 
     def __init__(self):
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('window-size=1920x3000')
-        chrome_options.add_argument('--disable-gpu')
-        chrome_options.add_argument('--hide-scrollbars')
         chrome_options.add_argument('blink-settings=imagesEnabled=false')
         chrome_options.add_argument('--headless')
-        self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path='/usr/local/Caskroom/chromedriver/2.45/chromedriver')
-        # self.browser.set_page_load_timeout(30)
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--no-sandbox')
+        self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path='/usr/bin/chromedriver')
 
     def closed(self, spider):
         self.browser.close()
