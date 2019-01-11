@@ -11,10 +11,9 @@ from mySpider.utils import code_help as ch
 class MyspiderPipeline(object):
 
     def process_item(self, item, spider):
-        measurement = ch.get_measurement_by_city_name(item.get('city'))
         data_json = {
             'time': int(time.time()),
-            'measurement': measurement,
+            'measurement': "TStest001",
             'fields': item
         }
         print('*'*50)

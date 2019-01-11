@@ -4,7 +4,6 @@ import traceback
 from scrapy import Spider, Request
 from selenium import webdriver
 from mySpider.items import MyspiderItem
-from mySpider.utils import code_help as ch
 
 
 class MySpider(Spider):
@@ -24,7 +23,9 @@ class MySpider(Spider):
         self.browser.close()
 
     def start_requests(self):
-        start_urls = ch.get_all_weather_urls()
+        start_urls = ["http://www.weather.com.cn/weather1d/101010800.shtml",
+                      "http://www.weather.com.cn/weather/101010800.shtml",
+                      "http://www.86pm25.com/city/97.html"]
         for url in start_urls:
             yield Request(url=url, callback=self.parse)
 
@@ -72,5 +73,5 @@ class MySpider(Spider):
         except:
             print(traceback.format_exc())
 
-        item['city'] = ch.get_city_name_by_url(response.url)
+        item['city'] = "yanqing"
         yield item
